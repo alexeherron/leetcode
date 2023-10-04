@@ -48,7 +48,7 @@ WHERE id IN (
   SELECT managerID 
   FROM Employee
   GROUP BY managerID
-  HAVING COUNT(managerID >= 5)
+  HAVING COUNT(managerID) >= 5
 )
 
 -- OTHER CLEVER SOLUTION
